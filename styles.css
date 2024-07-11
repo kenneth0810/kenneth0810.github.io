@@ -170,12 +170,13 @@ section {
 }
 
 footer {
-    height: 15vh;
+    /* height: 15vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     box-shadow: 0 -0.2rem 0 var(--purple);
+    padding: 1rem 0;
 }
 
 #profiles a {
@@ -252,7 +253,24 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .header-title {
+        font-size: 2rem;
+    }
+    .header-paragraph {
+        font-size: 0.75rem;
+    }
     #projects {
         padding: 0;
+    }
+    #about-description img {
+        width: 18rem;
+        height: 18rem;
+    }
+    .other-img {
+        width: 18rem;
+        height: 18rem;
+    }
+    #about-description p {
+        font-size: 0.9rem;
     }
 }
