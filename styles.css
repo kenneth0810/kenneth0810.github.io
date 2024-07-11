@@ -207,6 +207,7 @@ footer {
     border: 0.3rem solid var(--purple);
     box-shadow: -0.4rem 0.4rem 0 var(--orange);
     margin: 1rem 0;
+    border-radius: 0.5rem;
 }
 
 #about-img {
@@ -219,6 +220,7 @@ footer {
     margin: 2rem 0;
     border: 0.3rem solid var(--purple);
     box-shadow: -0.4rem 0.4rem 0 var(--green);
+    border-radius: 0.5rem;
 }
 
 @media (max-width: 1400px) {
@@ -239,6 +241,10 @@ footer {
     #about-description p {
         width: 100%;
     }
+    #about-description img {
+        width: 20rem;
+        height: 20rem;
+    }
     .other-img {
         width: 20rem;
         height: 20rem;
@@ -248,9 +254,5 @@ footer {
 @media (max-width: 768px) {
     #projects {
         padding: 0;
-    }
-    .other-img {
-        width: 25rem;
-        height: 25rem;
     }
 }
