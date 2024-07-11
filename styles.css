@@ -156,11 +156,11 @@ section {
     margin-top: 0.5rem;
 }
 
-img {
+.svg {
     transition: all 0.2s linear;
 }
 
-img:hover {
+.svg:hover {
     scale: 1.2;
 }
 
@@ -182,8 +182,75 @@ footer {
     margin: 0 0.5rem;
 }
 
+#about {
+    padding-top: 4rem;
+    height: 80vh;
+}
+
+#about-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+#about-description p {
+    width: 60%;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+#about-description img {
+    width: 25rem;
+    height: 25rem;
+    border: 0.3rem solid var(--purple);
+    box-shadow: -0.4rem 0.4rem 0 var(--orange);
+    margin: 1rem 0;
+}
+
+#about-img {
+    height: 60vh;
+}
+
+.other-img {
+    width: 18rem;
+    height: 18rem;
+    margin: 2rem 0;
+    border: 0.3rem solid var(--purple);
+    box-shadow: -0.4rem 0.4rem 0 var(--green);
+}
+
+@media (max-width: 1400px) {
+    .other-img {
+        width: 25rem;
+        height: 25rem;
+    }
+}
+
 @media (max-width: 1200px) {
     section {
         padding: 2rem;
+    }
+    #about-description {
+        flex-direction: column;
+        align-items: center;
+    }
+    #about-description p {
+        width: 100%;
+    }
+    .other-img {
+        width: 20rem;
+        height: 20rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #projects {
+        padding: 0;
+    }
+    .other-img {
+        width: 25rem;
+        height: 25rem;
     }
 }
