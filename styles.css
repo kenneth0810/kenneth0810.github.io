@@ -1,9 +1,9 @@
-/* color palette: https://coolors.co/palette/f4f1de-e07a5f-3d405b-81b29a-f2cc8f */
+/* color palette: https://coolors.co/palette/f4f1de-e07a5f-3d405b-7eb59a-f2cc8f */
 :root {
     --cream: #F4F1DE;
     --orange: #E07A5F;
     --purple: #3D405B;
-    --green: #81B29A;
+    --green: #7eb59a;
     --tan: #F2CC8F;
     --off-white: #F9F9F9;
 }
@@ -13,6 +13,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    color: var(--purple);
 }
 
 html {
@@ -25,10 +26,11 @@ body {
 }
 
 nav {
-    background-color: #a7d4bc;
+    background-color: var(--off-white);
     padding: 0 2rem 0 2rem;
     transition: all 0.2s linear;
     z-index: 999;
+    border-radius: 0 0 2rem 2rem;
 }
 
 #nav {
@@ -43,6 +45,7 @@ nav {
 nav li {
     width: 100%;
     margin-right: 1rem;
+    font-size: 1.1rem;
 }
 
 #navbar-name {
@@ -54,26 +57,24 @@ nav li {
     transition: all 0.1s linear;
 }
 
-.navbar-brand:hover {
+/* .navbar-brand:hover {
     scale: 1.25;
-}
+} */
 
 .nav-link {
     font-weight: 500;
     border-radius: 0.5rem;
-    color: var(--purple);
     transition: all 0.2s ease-in-out;
 }
 
 .nav-link:hover {
     scale: 1.025;
     color: var(--purple);
-    box-shadow: 0.2rem 0.2rem 0 var(--purple);
+    box-shadow: -0.2rem 0.2rem 0 var(--purple);
 }
 
 .navbar-toggler {
     border: none;
-    outline: none;
 }
 
 .navbar-toggler:focus {
@@ -82,7 +83,7 @@ nav li {
 
 section {
     height: 100vh;
-    padding: 2rem 3rem 2rem 3rem;
+    padding: 2rem 10rem 2rem 10rem;
 }
 
 .header-title {
@@ -93,7 +94,6 @@ section {
 
 .header-paragraph {
     font-size: 1.25rem;
-    color: var(--purple);
 }
 
 .link-button {
@@ -110,5 +110,80 @@ section {
 .link-button:hover {
     color: white;
     scale: 1.025;
-    box-shadow: 0.3rem 0.3rem 0 var(--purple);
+    box-shadow: -0.3rem 0.3rem 0 var(--purple);
+}
+
+.card {
+    display: block;
+    background-color: var(--off-white);
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 0.3rem solid var(--purple);
+    box-shadow: -0.3rem 0.3rem 0 var(--orange);
+    transition: all 0.2s linear;
+    margin: 1.5rem;
+}
+
+.card:hover {
+    scale: 1.05;
+    transform:  rotate(-0.75deg);
+}
+
+.project-title {
+    color: var(--green);
+}
+
+.project-subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.project-date {
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.project-skills {
+    margin-top: 1rem;
+}
+
+.skill {
+    padding: 0.2rem 1rem;
+    border-radius: 2rem;
+    border: 0.2rem solid var(--green);
+    color: var(--green);
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+img {
+    transition: all 0.2s linear;
+}
+
+img:hover {
+    scale: 1.2;
+}
+
+#more {
+    margin: 5rem 0;
+    text-align: center;
+}
+
+footer {
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 -0.2rem 0 var(--purple);
+}
+
+#profiles a {
+    margin: 0 0.5rem;
+}
+
+@media (max-width: 1200px) {
+    section {
+        padding: 2rem;
+    }
 }
