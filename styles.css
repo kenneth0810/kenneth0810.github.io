@@ -6,6 +6,7 @@
     --green: #7eb59a;
     --tan: #F2CC8F;
     --off-white: #F9F9F9;
+    --muted-purple: #72717b;
 }
 
 * {
@@ -147,6 +148,10 @@ section {
     font-weight: 300;
 }
 
+.project-description {
+    color: var(--muted-purple);
+}
+
 .project-skills {
     margin-top: 1rem;
 }
@@ -204,6 +209,7 @@ footer {
     text-align: center;
     font-size: 1.1rem;
     margin-top: 1rem;
+    color: var(--muted-purple);
 }
 
 #about-description img {
@@ -217,6 +223,10 @@ footer {
 
 #about-img {
     min-height: 60vh;
+}
+
+#about-img p {
+    color: var(--muted-purple);
 }
 
 .other-img {
