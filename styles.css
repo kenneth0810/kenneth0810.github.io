@@ -266,8 +266,14 @@ footer {
     .link-button {
         font-size: 0.75rem;
     }
+    .card {
+        padding: 1rem;
+    }
     #projects {
         padding: 0;
+    }
+    .project-description, .project-subtitle, .project-date, .skill {
+        font-size: 0.75rem;
     }
     #about-description img {
         width: 18rem;
