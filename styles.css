@@ -83,7 +83,7 @@ nav li {
 
 section {
     height: 100vh;
-    padding: 2rem 10rem 2rem 10rem;
+    padding: 2rem 5rem 2rem 5rem;
 }
 
 .header-title {
@@ -165,7 +165,7 @@ img:hover {
 }
 
 #more {
-    margin: 5rem 0;
+    margin: 3rem 0;
     text-align: center;
 }
 
