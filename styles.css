@@ -1,0 +1,114 @@
+/* color palette: https://coolors.co/palette/f4f1de-e07a5f-3d405b-81b29a-f2cc8f */
+:root {
+    --cream: #F4F1DE;
+    --orange: #E07A5F;
+    --purple: #3D405B;
+    --green: #81B29A;
+    --tan: #F2CC8F;
+    --off-white: #F9F9F9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: var(--off-white);
+}
+
+body {
+    background-color: var(--off-white);
+}
+
+nav {
+    background-color: #a7d4bc;
+    padding: 0 2rem 0 2rem;
+    transition: all 0.2s linear;
+    z-index: 999;
+}
+
+#nav {
+    position: fixed;
+    width: 100%;
+}
+
+.show-nav {
+    transform: translateY(-100%);
+}
+
+nav li {
+    width: 100%;
+    margin-right: 1rem;
+}
+
+#navbar-name {
+    color: var(--purple);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    transition: all 0.1s linear;
+}
+
+.navbar-brand:hover {
+    scale: 1.25;
+}
+
+.nav-link {
+    font-weight: 500;
+    border-radius: 0.5rem;
+    color: var(--purple);
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+    scale: 1.025;
+    color: var(--purple);
+    box-shadow: 0.2rem 0.2rem 0 var(--purple);
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+section {
+    height: 100vh;
+    padding: 2rem 3rem 2rem 3rem;
+}
+
+.header-title {
+    color: var(--green);
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.header-paragraph {
+    font-size: 1.25rem;
+    color: var(--purple);
+}
+
+.link-button {
+    text-decoration: none;
+    color: var(--off-white);
+    border-radius: 0.5rem;
+    background-color: var(--orange);
+    padding: 0.7rem;
+    font-size: 1.25rem;
+    width: fit-content;
+    transition: all 0.2s ease-in-out;
+}
+
+.link-button:hover {
+    color: white;
+    scale: 1.025;
+    box-shadow: 0.3rem 0.3rem 0 var(--purple);
+}
