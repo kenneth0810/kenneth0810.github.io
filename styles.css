@@ -165,7 +165,7 @@ section {
 }
 
 #more {
-    margin: 3rem 0;
+    margin: 2rem 0;
     text-align: center;
 }
 
@@ -184,7 +184,7 @@ footer {
 
 #about {
     padding-top: 4rem;
-    height: 80vh;
+    height: 70%;
 }
 
 #about-description {
