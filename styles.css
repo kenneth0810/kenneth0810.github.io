@@ -82,8 +82,12 @@ nav li {
 }
 
 section {
-    height: 100vh;
+    min-height: 100vh;
     padding: 2rem 5rem 2rem 5rem;
+}
+
+#home {
+    padding-top: 5rem;
 }
 
 .header-title {
@@ -185,7 +189,7 @@ footer {
 
 #about {
     padding-top: 4rem;
-    height: 70%;
+    min-height: 70vh;
 }
 
 #about-description {
@@ -212,7 +216,7 @@ footer {
 }
 
 #about-img {
-    height: 60vh;
+    min-height: 60vh;
 }
 
 .other-img {
@@ -254,9 +258,12 @@ footer {
 
 @media (max-width: 768px) {
     .header-title {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .header-paragraph {
+        font-size: 0.75rem;
+    }
+    .link-button {
         font-size: 0.75rem;
     }
     #projects {
