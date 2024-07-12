@@ -83,7 +83,6 @@ nav li {
 }
 
 section {
-    /* min-height: 100vh; */
     padding: 2rem 5rem 2rem 5rem;
 }
 
@@ -203,7 +202,6 @@ footer {
 
 #about {
     padding-top: 4rem;
-    min-height: 70vh;
 }
 
 #about-description {
@@ -228,10 +226,6 @@ footer {
     box-shadow: -0.4rem 0.4rem 0 var(--orange);
     margin: 1rem 0;
     border-radius: 0.5rem;
-}
-
-#about-img {
-    min-height: 60vh;
 }
 
 #about-img p {
