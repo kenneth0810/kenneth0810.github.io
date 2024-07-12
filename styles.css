@@ -58,9 +58,9 @@ nav li {
     transition: all 0.1s linear;
 }
 
-/* .navbar-brand:hover {
-    scale: 1.25;
-} */
+.navbar-brand:hover {
+    scale: 1.1;
+}
 
 .nav-link {
     font-weight: 500;
@@ -83,12 +83,20 @@ nav li {
 }
 
 section {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     padding: 2rem 5rem 2rem 5rem;
+}
+
+hr {
+    border: solid var(--orange);
+    border-radius: 1rem;
+    border-width: 0.15rem;
+    opacity: 0.75;
 }
 
 #home {
     padding-top: 5rem;
+    min-height: 100vh;
 }
 
 .header-title {
@@ -126,7 +134,7 @@ section {
     border: 0.3rem solid var(--purple);
     box-shadow: -0.3rem 0.3rem 0 var(--orange);
     transition: all 0.2s linear;
-    margin: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 .card:hover {
@@ -174,7 +182,7 @@ section {
 }
 
 #more {
-    margin: 2rem 0;
+    margin-top: 1.5rem;
     text-align: center;
 }
 
@@ -184,8 +192,9 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 -0.2rem 0 var(--purple);
+    box-shadow: 0 -0.3em 0 var(--purple);
     padding: 1rem 0;
+    border-radius: 3rem;
 }
 
 #profiles a {
@@ -280,7 +289,7 @@ footer {
         padding: 1rem;
     }
     #projects {
-        padding: 0;
+        padding: 1rem;
     }
     .project-description, .project-subtitle, .project-date, .skill {
         font-size: 0.75rem;
@@ -295,5 +304,9 @@ footer {
     }
     #about-description p {
         font-size: 0.9rem;
+        text-align: justify;
+    }
+    h2 {
+        text-align: center;
     }
 }
